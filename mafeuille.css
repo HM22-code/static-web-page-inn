@@ -1,0 +1,120 @@
+body{
+    background-color:whitesmoke;
+    font-family:Tahoma,"geneva",sans-serif;
+    padding:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+h1{
+    margin:20px;
+    text-align:center;
+    font-size:2em;
+    color:firebrick;
+    margin-bottom:0px;
+}
+h2{
+    border-bottom:1px solid indianred;
+    font-size:1.5em;
+    color:indianred;
+}
+h3{
+    color:indianred;
+    font-size:1.2em;
+    text-indent:10px;
+}
+.sub_h1{
+    text-align:center;
+    color:#9C0000;
+    font-style:italic;
+    font-size:1.6em;
+    margin:0.2em;
+}
+
+a{
+    color:firebrick;
+}
+a:visited{
+    color:salmon;
+}
+p{
+    margin-top:0.7em;
+    margin-Bottom:0.7em;
+}
+#auberge{
+    width:100%;
+}
+
+nav{
+    background-color:darkred;
+    width:100%;
+    position:fixed;
+    left:0px;
+    z-index:10;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+}
+nav a:hover{
+    font-weight:bold;
+    text-decoration:underline;
+}
+nav a:visited{
+    color:whitesmoke;
+
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+
+}
+nav ul li{
+    margin-left:20px;
+    margin-right:20px;
+}
+nav:first-of-type{
+    top:0px;
+
+}
+nav:last-of-type{
+    bottom:0px;
+}
+
+a.pageactuel{
+    border-bottom:2px solid whitesmoke;
+    font-weight:bold;
+}
+
+table tr th{
+    background-color:indianred;
+    color:white;
+}
+table tr td{
+    background-color:white;
+    padding-inline-start:10px;
+}
+table, tr, th, td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+table{
+    width:60%;
+    margin-right:auto;
+    margin-left:auto;
+}
+table tr td.colonnedeux{
+    text-align:center;
+}
+table tr td.colonnetrois{
+    text-align:right;
+}
+
+fieldset{
+    display:block;
+    width:60%;
+    background-color:ghostwhite;
+    margin-top:1.5em;
+    margin-right:auto;
+    margin-left:auto;
+}
