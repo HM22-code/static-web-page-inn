@@ -1,0 +1,48 @@
+<template lang="">
+    <div class="container">
+        <!-- Content here -->
+        <section>
+            <titre>Mentions légales obligatoires</titre>
+            <section>
+                <titre>Raison sociale</titre>
+                <p>Auberge de Peillon, place Auguste Arnulf, Peillon</p>
+                <p>N° SIREN :123 456 789</p>
+            </section>
+            <section>
+                <titre>Directeur de la publication</titre>
+                <p><q>Au sens de l'article 93-2 de la loi n° 82-652 du 29 juillet 1982. </q></p>
+                <p>M. Jean Dupont</p>
+            </section>
+            <section>
+                <titre>Traitement des données à caractère personnel</titre>
+                <p>Le site n'étant qu'un projet étudiant, aucune donnée à caractère personnel n'est stockée ou utilisée.</p>
+                <p>Aucune déclaration CNIL n'a donc été effectuée, n'étant pas nécessaire.</p>
+                <q>Conformément aux dispositions de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données qui vous concernent. Pour demander une modification, rectification ou suppression des données vous concernant, il vous suffit d'envoyer un courrier par voie électronique ou postale à la DILA en justifiant de votre identité.</q>
+            </section>
+        </section>
+        <section>
+            <titre>Logiciels utilisés</titre>
+            <div>
+                <p>La carte embarquée utilise la technologie <a href="https://www.openstreetmap.org">OpenStreeMap</a></p>
+            </div>
+        </section>
+        <section>
+            <titre>Propriété intellectuelle</titre>
+            <div>
+                <p>L'ensemble du code source, des images, des textes et autres sont la propriété des auteurs, sauf citation expresse.</p>
+            </div>
+        </section>
+        <section>
+            <titre>Contact</titre>
+            <p><a href="mailto:admin.hotel.peillon@outlook.fr">admin.hotel.peillon@outlook.fr</a></p>
+        </section>
+    </div>
+</template>
+<script>
+export default {
+
+}
+</script>
+<style lang="">
+
+</style>
