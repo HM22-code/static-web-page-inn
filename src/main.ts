@@ -10,7 +10,7 @@ import Legal from './components/Legal.vue';
 import Confidentiality from './components/Confidentiality.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/static-web-page-inn/'),
     routes: [
         { path: '/', component: Home },
         { path: '/bedrooms', component: Bedrooms },
