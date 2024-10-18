@@ -1,6 +1,5 @@
-<template lang="">
+<template>
     <div class="container">
-        <!-- Content here -->
         <article>
 				<h2>Auberge de Peillon</h2>
 				<div id="auberge">
@@ -15,23 +14,23 @@
 				</div>
 			</article>
 			<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.376697063446046%2C43.770288083499%2C7.384378910064698%2C43.78429391772475&amp;layer=mapnik&amp;marker=43.77729141068732%2C7.380537986755371" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.7773&amp;mlon=7.3805#map=16/43.7773/7.3805">Afficher une carte plus grande</a></small>
-			<aside>
-				<h2>Le village de Peillon</h2>
-				<div id="peillon_village">
-					<img src="../assets/peillon.jpg" alt="peillon">
-					<p>A 20 km de Nice et 28 km de Monaco, Peillon est un petit bijou dans l’écrin de l’arrière-pays.</p>
-					<p>Considéré comme l’un des plus beaux villages perchés des Alpes-Maritimes, il possède une architecture typiquement médiévale
+			<div class="card">
+				<img src="../assets/peillon.jpg" class="card-img-top" alt="peillon">
+				<div class="card-body">
+					<h5 class="card-title">Le village de Peillon</h5>
+					<p class="card-text">A 20 km de Nice et 28 km de Monaco, Peillon est un petit bijou dans l’écrin de l’arrière-pays.</p>
+					<p class="card-text">Considéré comme l’un des plus beaux villages perchés des Alpes-Maritimes, il possède une architecture typiquement médiévale
 					avec ses arcades bâties, ses ruelles tortueuses et fleuries entrelacées de passages voûtés et d’escaliers en calades.</p>
-					<p>Au fil de ses ruelles en calade, vous pourrez admirer le riche patrimoine de ce joyau de la Côte d'Azur.</p>
-					<p>La fontaine remarquable qui orne la place Arnulf date de 1800 et depuis 1941, elle est inscrite à l'inventaire des Monuments historiques.</p>
-					<p>Montez jusqu'en haut du village et vous serez récompensé par le superbe panorama sur la région niçoise qui s'offrira à vous depuis la Plaça de la Gleia.
+					<p class="card-text">Au fil de ses ruelles en calade, vous pourrez admirer le riche patrimoine de ce joyau de la Côte d'Azur.</p>
+					<p class="card-text">La fontaine remarquable qui orne la place Arnulf date de 1800 et depuis 1941, elle est inscrite à l'inventaire des Monuments historiques.</p>
+					<p class="card-text">Montez jusqu'en haut du village et vous serez récompensé par le superbe panorama sur la région niçoise qui s'offrira à vous depuis la Plaça de la Gleia.
 					C'est sur cette place qu'a été édifiée, sur les ruines d'un ancien château, l'Eglise de la Transfiguration.
 					Si vous avez la chance d'y entrer, vous pourrez apprécier son mobilier baroque.</p>
-					<p>C'est aussi sur cette place que se trouve l'ancienne école du village. Elle abrite une fresque de Charles Rocher de Gérigné : "Lux in Tenebris".</p>
-					<p>Ne manquez pas de visiter également la Chapelle des Pénitents Blancs qui se situe juste à coté de notre auberge. Elle est réputée pour la grande qualité de ses peintures murales.</p>
-					<p> Vous pourrez ensuite poursuivre votre promenade jusqu'à la Chapelle Saint-Roch et l'Oratoire de la Merla.</p>
+					<p class="card-text">C'est aussi sur cette place que se trouve l'ancienne école du village. Elle abrite une fresque de Charles Rocher de Gérigné : "Lux in Tenebris".</p>
+					<p class="card-text">Ne manquez pas de visiter également la Chapelle des Pénitents Blancs qui se situe juste à coté de notre auberge. Elle est réputée pour la grande qualité de ses peintures murales.</p>
+					<p class="card-text"> Vous pourrez ensuite poursuivre votre promenade jusqu'à la Chapelle Saint-Roch et l'Oratoire de la Merla.</p>
 				</div>
-			</aside>
+			</div>
     </div>
 </template>
 <script>
