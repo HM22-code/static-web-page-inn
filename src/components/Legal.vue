@@ -1,6 +1,5 @@
-<template lang="">
+<template>
     <div class="container">
-        <!-- Content here -->
         <section>
             <titre>Mentions légales obligatoires</titre>
             <section>

@@ -1,6 +1,5 @@
-<template lang="">
+<template>
     <div class="container">
-        <!-- Content here -->
         <section>
 			<h2>Utilisation des données personnelles collectées</h2>
 			<p>De manière générale, vous n’êtes pas tenu de nous
