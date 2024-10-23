@@ -1,3 +1,17 @@
+<script setup lang="js">
+import { Carousel } from 'bootstrap'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+    const myCarouselElement = document.querySelector('#carousel')
+    const carousel = new Carousel(myCarouselElement)
+    myCarouselElement.addEventListener('slid.bs.carousel', event => {
+        document.querySelector('#row-'+event.to).classList.add('table-active')
+        document.querySelector('#row-'+event.from).classList.remove('table-active')
+    })
+})
+</script>
+
 <template>
     <div class="container">
         <div id="carousel" class="carousel slide">
@@ -10,31 +24,31 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../assets/calade.jpg" class="d-block w-100" alt="chambre">
+                    <img src="../assets/img/calade.jpg" class="d-block w-100" alt="chambre">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>La Calade</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/lucioles.jpg" class="d-block w-100" alt="chambre">
+                    <img src="../assets/img/lucioles.jpg" class="d-block w-100" alt="chambre">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Les Lucioles</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/myrtes.jpg" class="d-block w-100" alt="chambre">
+                    <img src="../assets/img/myrtes.jpg" class="d-block w-100" alt="chambre">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Les Myrtes</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/fontaine.jpg" class="d-block w-100" alt="chambre">
+                    <img src="../assets/img/fontaine.jpg" class="d-block w-100" alt="chambre">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>La Fontaine</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../assets/oliviers.jpg" class="d-block w-100" alt="chambre">
+                    <img src="../assets/img/oliviers.jpg" class="d-block w-100" alt="chambre">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Les Oliviers</h5>
                     </div>
@@ -87,19 +101,6 @@
         </table>
     </div>
 </template>
-<script setup lang="js">
-import { Carousel } from 'bootstrap'
-import { onMounted } from 'vue'
 
-onMounted(() => {
-    const myCarouselElement = document.querySelector('#carousel')
-    const carousel = new Carousel(myCarouselElement)
-    myCarouselElement.addEventListener('slid.bs.carousel', event => {
-        document.querySelector('#row-'+event.to).classList.add('table-active')
-        document.querySelector('#row-'+event.from).classList.remove('table-active')
-    })
-})
-</script>
-<style lang="">
-
+<style scoped>
 </style>

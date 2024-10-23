@@ -9,6 +9,7 @@ import Contact from './components/Contact.vue';
 import Legal from './components/Legal.vue';
 import Confidentiality from './components/Confidentiality.vue';
 
+// Router component
 const router = createRouter({
     history: createWebHistory('/static-web-page-inn/'),
     routes: [

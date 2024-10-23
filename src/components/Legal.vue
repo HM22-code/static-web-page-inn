@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
     <div class="container">
         <div class="m-4">
@@ -33,11 +36,6 @@
         </div>
     </div>
 </template>
-<script>
-export default {
 
-}
-</script>
-<style lang="">
-
+<style scoped>
 </style>

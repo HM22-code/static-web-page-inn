@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
     <div class="container">
 		<div class="card m-4 p-4">
@@ -74,11 +77,6 @@
 		</div>
     </div>
 </template>
-<script>
-export default {
 
-}
-</script>
-<style lang="">
-
+<style scoped>
 </style>
