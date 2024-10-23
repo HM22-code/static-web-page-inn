@@ -58,27 +58,27 @@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                <tr id="calade">
+                <tr id="row-0">
                     <td scope="row">La Calade</td>
                     <td>Chambre simple (1 pers)</td>
                     <td>65 €</td>
                 </tr>
-                <tr id="lucioles">
+                <tr id="row-1">
                     <td scope="row">Les Lucioles</td>
                     <td>Chambre double (2 lits)</td>
                     <td>95 €</td>
                 </tr>
-                <tr id="myrtes">
+                <tr id="row-2">
                     <td scope="row">Les Myrtes</td>
                     <td>Chambre double (1 lit)</td>
                     <td>95 €</td>
                 </tr>
-                <tr id="fontaine">
+                <tr id="row-3">
                     <td scope="row">La Fontaine</td>
                     <td>Chambre double (1 lit)</td>
                     <td>95 €</td>
                 </tr>
-                <tr id="oliviers">
+                <tr id="row-4">
                     <td>Les Oliviers</td>
                     <td>Familiale (1 gd lit + 2 petits)</td>
                     <td>135 €</td>
@@ -95,36 +95,8 @@ onMounted(() => {
     const myCarouselElement = document.querySelector('#carousel')
     const carousel = new Carousel(myCarouselElement)
     myCarouselElement.addEventListener('slid.bs.carousel', event => {
-        if (event.to == 0) {
-            document.querySelector('#calade').classList.add('table-active')
-        }
-        if (event.to == 1) {
-            document.querySelector('#lucioles').classList.add('table-active')
-        }
-        if (event.to == 2) {
-            document.querySelector('#myrtes').classList.add('table-active')
-        }
-        if (event.to == 3) {
-            document.querySelector('#fontaine').classList.add('table-active')
-        }
-        if (event.to == 4) {
-            document.querySelector('#oliviers').classList.add('table-active')
-        }
-        if (event.from == 0) {
-            document.querySelector('#calade').classList.remove('table-active')
-        }
-        if (event.from == 1) {
-            document.querySelector('#lucioles').classList.remove('table-active')
-        }
-        if (event.from == 2) {
-            document.querySelector('#myrtes').classList.remove('table-active')
-        }
-        if (event.from == 3) {
-            document.querySelector('#fontaine').classList.remove('table-active')
-        }
-        if (event.from == 4) {
-            document.querySelector('#oliviers').classList.remove('table-active')
-        }
+        document.querySelector('#row-'+event.to).classList.add('table-active')
+        document.querySelector('#row-'+event.from).classList.remove('table-active')
     })
 })
 </script>
