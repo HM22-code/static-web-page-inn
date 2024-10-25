@@ -7,7 +7,6 @@ import ParalllaxBanner from './ParalllaxBanner.vue';
     <div>
 		<ParalllaxBanner />
         <div>
-			<img src="../assets/img/auberge.jpg" class="img-fluid" alt="auberge">
 			<div class="container">
 				<h1>Bienvenue à l'Auberge Peillon</h1>
                 <p>Hôtel 3 étoiles - restaurant gastronomique - bistrot</p>
@@ -17,6 +16,7 @@ import ParalllaxBanner from './ParalllaxBanner.vue';
 				Vous pourrez profiter de l'espace de remise en forme qui est accessible gratuitement à tous les clients de l'hôtel.
 				</p>
 			</div>
+			<img src="../assets/img/auberge.jpg" class="img-fluid" alt="auberge">
 		</div>
     </div>
 </template>
