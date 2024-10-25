@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="container">
+    <div>
         <div id="carousel" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

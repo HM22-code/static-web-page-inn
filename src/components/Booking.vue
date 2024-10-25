@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="container">
+    <div>
 		<div class="card m-4 p-4">
 			<form action="mailto:contact@aubergepeillon.fr" enctype="text/plain" method="post">
 				<div class="form-check form-check-inline">
@@ -71,7 +71,7 @@
 					<input class="form-check-input" type="checkbox" id="confidentialite" required name="confidentialité" />
 					<label class="form-check-label" for="confidentialite">
 						En cochant cette case,vous acceptez notre
-						<router-link to="/confidentiality">Politique de confidentialité</router-link>
+						<router-link to="/confidentiality" target="_blank" rel="noopener noreferrer">Politique de confidentialité</router-link>
 					</label>
 				</div>
 				<div class="mb-3">

@@ -1,46 +1,64 @@
 <script setup>
-import Location from './Location.vue';
-
 </script>
 
 <template>
-    <div>
-		<Location />
-		<div class="card">
-			<img src="../assets/img/peillon.jpg" class="card-img-top" alt="peillon">
-			<div class="card-body">
-				<h5 class="card-title">Le village de Peillon</h5>
-				<p class="card-text">
-					A 20 km de Nice et 28 km de Monaco, Peillon est un petit bijou dans l’écrin de l’arrière-pays.
-				</p>
-				<p class="card-text">
-					Considéré comme l’un des plus beaux villages perchés des Alpes-Maritimes, il possède une architecture typiquement médiévale
-					avec ses arcades bâties, ses ruelles tortueuses et fleuries entrelacées de passages voûtés et d’escaliers en calades.
-				</p>
-				<p class="card-text">
-					Au fil de ses ruelles en calade, vous pourrez admirer le riche patrimoine de ce joyau de la Côte d'Azur.
-				</p>
-				<p class="card-text">
-					La fontaine remarquable qui orne la place Arnulf date de 1800 et depuis 1941, elle est inscrite à l'inventaire des Monuments historiques.
-				</p>
-				<p class="card-text">
-					Montez jusqu'en haut du village et vous serez récompensé par le superbe panorama sur la région niçoise qui s'offrira à vous depuis la Plaça de la Gleia.
-					C'est sur cette place qu'a été édifiée, sur les ruines d'un ancien château, l'Eglise de la Transfiguration.
-					Si vous avez la chance d'y entrer, vous pourrez apprécier son mobilier baroque.
-				</p>
-				<p class="card-text">
-					C'est aussi sur cette place que se trouve l'ancienne école du village. Elle abrite une fresque de Charles Rocher de Gérigné : "Lux in Tenebris".
-				</p>
-				<p class="card-text">
-					Ne manquez pas de visiter également la Chapelle des Pénitents Blancs qui se situe juste à coté de notre auberge. Elle est réputée pour la grande qualité de ses peintures murales.
-				</p>
-				<p class="card-text">
-					Vous pourrez ensuite poursuivre votre promenade jusqu'à la Chapelle Saint-Roch et l'Oratoire de la Merla.
-				</p>
-			</div>
-		</div>
-    </div>
+    <div class="map-box">
+        <div class="map-content">
+            <h3>Coordonnées</h3>
+            <p>Téléphone : <a href="tel:0412131415">04 12 13 14 15</a></p>
+            <p>Courriel : <a href="mailto:contact@aubergedepeillon.fr">contact@aubergedepeillon.fr</a></p>
+            <h3>Dates d'ouverture</h3>
+            <p>L'auberge de Peillon vous accueille tous les jours du 01 mai au 31 octobre.</p>
+            <p>Elle est fermée de 02 janvier au 31 janvier pour congés annuels.</p>
+            <p>Le reste de l'année, nous sommes fermés du lundi au mercredi.</p>
+            <h3>Adresse</h3>
+            <p><address>Auguste Arnulf, 06440 Peillon village</address></p>
+            <p><small><a href="https://www.openstreetmap.org/?mlat=43.77862&amp;mlon=7.38206#map=16/43.77862/7.38206">Afficher la carte sur OpenStreetMap</a></small></p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.373178005218507%2C43.77275173679235%2C7.390944957733154%2C43.78449530512994&amp;layer=mapnik&amp;marker=43.778623809275445%2C7.38206148147583"></iframe>
+        </div>
+	</div>
 </template>
 
 <style scoped>
+/* Container to hold the panel and map */
+.map-box {
+    display: flex;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Content panel on the left */
+.map-content {
+    flex: 0 0 30%; /* Adjusts the panel width to 30% of the container */
+    padding: 20px;
+    overflow-y: auto; /* Scrollable if content overflows */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+}
+
+/* Map area on the right */
+.map {
+    flex: 1; /* Takes up the remaining 70% of the container */
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+.map-box {
+    flex-direction: column;
+}
+.map-content {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.map {
+    flex: 1;
+}
+}
 </style>

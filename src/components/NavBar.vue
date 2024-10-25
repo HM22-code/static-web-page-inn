@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
         <div class="container-fluid">
             <router-link class="navbar-brand" to="/">
                 <img src="../assets/img/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -14,13 +14,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/bedrooms">Chambres</router-link>
+                        <a href="#bedrooms" class="nav-link">Chambres</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/booking">Réservation</router-link>
+                        <a href="#booking" class="nav-link">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/contact">Contact</router-link>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="d-flex">
