@@ -2,6 +2,7 @@
 import Bedrooms from './Bedrooms.vue';
 import Booking from './Booking.vue';
 import Contact from './Contact.vue';
+import InfoCard from './InfoCard.vue';
 import ParalllaxBanner from './ParalllaxBanner.vue';
 
 </script>
@@ -21,6 +22,7 @@ import ParalllaxBanner from './ParalllaxBanner.vue';
 			</div>
 			<img src="../assets/img/auberge.jpg" class="img-fluid" alt="auberge">
 		</div>
+		<InfoCard />
 		<Bedrooms id="bedrooms" />
 		<Booking id="booking" />
 		<Contact id="contact" />
