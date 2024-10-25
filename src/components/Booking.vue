@@ -10,16 +10,20 @@
 					<label class="form-check-label" for="monsieur">Monsieur</label>
 				</div>
 				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="radio" id="madame" name="genre" value="madame">
+					<input class="form-check-input" type="radio" id="madame" name="genre" value="Madame">
 					<label class="form-check-label" for="madame">Madame</label>
 				</div>
-				<div class="mb-3">
-					<label class="form-label" for="nom">Nom</label>
-					<input class="form-control" type="text" id="nom" required  name="nom" >
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" id="other" name="genre" value="Autres">
+					<label class="form-check-label" for="other">Autres</label>
 				</div>
 				<div class="mb-3">
-					<label class="form-label" for="prenom">Prénom</label>
-					<input class="form-control" type="text" id="prenom" required name="prenom" >
+					<label class="form-label" for="lastname">Nom</label>
+					<input class="form-control" type="text" id="lastname" required name="lastname" >
+				</div>
+				<div class="mb-3">
+					<label class="form-label" for="firstname">Prénom</label>
+					<input class="form-control" type="text" id="firstname" required name="firstname" >
 				</div>
 				<div class="mb-3">
 					<label class="form-label" for="mail">Mail</label>
@@ -64,7 +68,7 @@
 					<textarea class="form-control" id="commentaires" placeholder="Vous pouvez nous laisser ici un message"></textarea>
 				</div>
 				<div class="mb-3 form-check">
-					<input class="form-check-input" type="checkbox" id="confidentialite" required name=" confidentialité" />
+					<input class="form-check-input" type="checkbox" id="confidentialite" required name="confidentialité" />
 					<label class="form-check-label" for="confidentialite">
 						En cochant cette case,vous acceptez notre
 						<router-link to="/confidentiality">Politique de confidentialité</router-link>
