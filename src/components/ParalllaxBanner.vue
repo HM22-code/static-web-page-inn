@@ -18,20 +18,18 @@
     justify-content: center;
     align-items: center;
 }
-
 .parallax-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/parallax-banner.jpeg');
+    background-image: url('../assets/img/parallax-banner.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     z-index: -1;
 }
-
 .parallax-content {
     text-align: center;
     z-index: 1;

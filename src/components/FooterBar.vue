@@ -3,7 +3,7 @@
 
 <template>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <router-link class="col-md-4 mb-0 text-body-secondary" to="/">© 2024 Auberge Peillon</router-link>
+        <router-link id="footer-home" class="col-md-4 mb-0 text-body-secondary" to="/">© 2024 Auberge Peillon</router-link>
         <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <a href="https://vite.dev/" class="logo vite">
                 <img src="../assets/svg/vite.svg" alt="vite logo" class="bi me-2" width="40" height="32"></img>
@@ -23,6 +23,9 @@
 </template>
 
 <style scoped>
+#footer-home {
+    text-decoration: none;
+}
 .logo {
     height: 6em;
     padding: 1.5em;

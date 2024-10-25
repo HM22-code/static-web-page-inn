@@ -3,7 +3,7 @@
 
 <template>
     <div class="container">
-        <div class="m-4">
+        <div class="m-4 p-4">
             <h1>Mentions légales obligatoires</h1>
             <div>
                 <h3>Raison sociale</h3>

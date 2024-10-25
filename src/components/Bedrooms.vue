@@ -13,7 +13,43 @@ onMounted(() => {
 </script>
 
 <template>
-    <div>
+    <div class="box">
+        <table id="table" class="table container p-4">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Type de chambre</th>
+                    <th scope="col">Prix par nuit</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr id="row-0">
+                    <td scope="row">La Calade</td>
+                    <td>Chambre simple (1 pers)</td>
+                    <td>65 €</td>
+                </tr>
+                <tr id="row-1">
+                    <td scope="row">Les Lucioles</td>
+                    <td>Chambre double (2 lits)</td>
+                    <td>95 €</td>
+                </tr>
+                <tr id="row-2">
+                    <td scope="row">Les Myrtes</td>
+                    <td>Chambre double (1 lit)</td>
+                    <td>95 €</td>
+                </tr>
+                <tr id="row-3">
+                    <td scope="row">La Fontaine</td>
+                    <td>Chambre double (1 lit)</td>
+                    <td>95 €</td>
+                </tr>
+                <tr id="row-4">
+                    <td>Les Oliviers</td>
+                    <td>Familiale (1 gd lit + 2 petits)</td>
+                    <td>135 €</td>
+                </tr>
+            </tbody>
+        </table>
         <div id="carousel-bedrooms" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carousel-bedrooms" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -63,44 +99,39 @@ onMounted(() => {
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Type de chambre</th>
-                    <th scope="col">Prix par nuit</th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr id="row-0">
-                    <td scope="row">La Calade</td>
-                    <td>Chambre simple (1 pers)</td>
-                    <td>65 €</td>
-                </tr>
-                <tr id="row-1">
-                    <td scope="row">Les Lucioles</td>
-                    <td>Chambre double (2 lits)</td>
-                    <td>95 €</td>
-                </tr>
-                <tr id="row-2">
-                    <td scope="row">Les Myrtes</td>
-                    <td>Chambre double (1 lit)</td>
-                    <td>95 €</td>
-                </tr>
-                <tr id="row-3">
-                    <td scope="row">La Fontaine</td>
-                    <td>Chambre double (1 lit)</td>
-                    <td>95 €</td>
-                </tr>
-                <tr id="row-4">
-                    <td>Les Oliviers</td>
-                    <td>Familiale (1 gd lit + 2 petits)</td>
-                    <td>135 €</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </template>
 
 <style scoped>
+h5 {
+    color: white;
+}
+.box {
+    display: flex;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+#carousel-bedrooms {
+	flex: 0 0 50%; /* Adjusts the panel width to 50% of the container */
+    overflow-y: auto; /* Scrollable if content overflows */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+}
+#table {
+	flex: 1; /* Takes up the remaining 50% of the container */
+    position: relative;
+    margin-bottom: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1024px) {
+	.box {
+		flex-direction: column-reverse;
+	}
+	#carousel-bedrooms {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	#table {
+		flex: 1;
+	}
+}
 </style>

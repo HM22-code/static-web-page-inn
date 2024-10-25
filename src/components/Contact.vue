@@ -12,7 +12,7 @@
             <p>Elle est fermée de 02 janvier au 31 janvier pour congés annuels.</p>
             <p>Le reste de l'année, nous sommes fermés du lundi au mercredi.</p>
             <h3>Adresse</h3>
-            <p><address>Auguste Arnulf, 06440 Peillon village</address></p>
+            <address>Auguste Arnulf, 06440 Peillon village</address>
             <p><small><a href="https://www.openstreetmap.org/?mlat=43.77862&amp;mlon=7.38206#map=16/43.77862/7.38206">Afficher la carte sur OpenStreetMap</a></small></p>
         </div>
         <div class="map">
@@ -28,37 +28,36 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
 }
-
 /* Content panel on the left */
 .map-content {
-    flex: 0 0 30%; /* Adjusts the panel width to 30% of the container */
+    flex: 0 0 50%; /* Adjusts the panel width to 50% of the container */
     padding: 20px;
     overflow-y: auto; /* Scrollable if content overflows */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
 }
-
 /* Map area on the right */
 .map {
-    flex: 1; /* Takes up the remaining 70% of the container */
+    flex: 1; /* Takes up the remaining 50% of the container */
     position: relative;
 }
-
 .map iframe {
     width: 100%;
     height: 100%;
     border: none;
 }
-
+p {
+	text-align: justify;
+}
 @media (max-width: 768px) {
-.map-box {
-    flex-direction: column;
-}
-.map-content {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.map {
-    flex: 1;
-}
+	.map-box {
+		flex-direction: column;
+	}
+	.map-content {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.map {
+		flex: 1;
+	}
 }
 </style>

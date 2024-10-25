@@ -17,21 +17,25 @@
 					<input class="form-check-input" type="radio" id="other" name="genre" value="Autres">
 					<label class="form-check-label" for="other">Autres</label>
 				</div>
-				<div class="mb-3">
-					<label class="form-label" for="lastname">Nom</label>
-					<input class="form-control" type="text" id="lastname" required name="lastname" >
+				<div class="row">
+					<div class="mb-3 col">
+						<label class="form-label" for="lastname">Nom</label>
+						<input class="form-control" type="text" id="lastname" required name="lastname" >
+					</div>
+					<div class="mb-3 col">
+						<label class="form-label" for="firstname">Prénom</label>
+						<input class="form-control" type="text" id="firstname" required name="firstname" >
+					</div>
 				</div>
-				<div class="mb-3">
-					<label class="form-label" for="firstname">Prénom</label>
-					<input class="form-control" type="text" id="firstname" required name="firstname" >
-				</div>
-				<div class="mb-3">
-					<label class="form-label" for="mail">Mail</label>
-					<input class="form-control" type="email" id="mail" required name="mail" >
-				</div>
-				<div class="mb-3">
-					<label class="form-label" for="tel">Téléphone</label>
-					<input class="form-control" type="tel" id="tel" name="telephone" placeholder="Sans points,ni espaces" required>
+				<div class="row">
+					<div class="mb-3 col">
+						<label class="form-label" for="mail">Mail</label>
+						<input class="form-control" type="email" id="mail" required name="mail" >
+					</div>
+					<div class="mb-3 col">
+						<label class="form-label" for="tel">Téléphone</label>
+						<input class="form-control" type="tel" id="tel" name="telephone" placeholder="Sans points, ni espaces" required>
+					</div>
 				</div>
 				<div class="mb-3">
 					<label class="form-label" for="chambre">Chambre</label>
@@ -43,21 +47,25 @@
 						<option value="Les Oliviers">Les Oliviers</option>
 					</select>
 				</div>
-				<div class="mb-3">
-					<label class="form-label" for="datearrive">Date d'arrivée</label>
-					<input class="form-control" type="date" id="datearrive" required name="date d'arrivé" >
+				<div class="row">
+					<div class="mb-3 col">
+						<label class="form-label" for="datearrive">Date d'arrivée</label>
+						<input class="form-control" type="date" id="datearrive" required name="date d'arrivé" >
+					</div>
+					<div class="mb-3 col">
+						<label class="form-label" for="datedepart">Date de départ</label>
+						<input class="form-control" type="date" id="datedepart" required name="date de départ" >
+					</div>
 				</div>
-				<div class="mb-3">
-					<label class="form-label" for="datedepart">Date de départ</label>
-					<input class="form-control" type="date" id="datedepart" required name="date de départ" >
-				</div>
-				<div class="mb-3">
-					<label class="form-label" for="npersonne">Nombre de personnes</label>
-					<input class="form-control" type="number" id="npersonne" name="nombre de personnes" min="1" max="4">
-				</div>
-				<div class="mb-3">
-					<label class="form-label" for="npetitdejeuner">Nombre de petits déjeuners</label>
-					<input class="form-control" type="number" id="npetitdejeuner" name="nombre de petits déjeuners" min="0" max="4">
+				<div class="row">
+					<div class="mb-3 col">
+						<label class="form-label" for="npersonne">Nombre de personnes</label>
+						<input class="form-control" type="number" id="npersonne" name="nombre de personnes" min="1" max="4">
+					</div>
+					<div class="mb-3 col">
+						<label class="form-label" for="npetitdejeuner">Nombre de petits déjeuners</label>
+						<input class="form-control" type="number" id="npetitdejeuner" name="nombre de petits déjeuners" min="0" max="4">
+					</div>
 				</div>
 				<div class="mb-3 form-check">
 					<input class="form-check-input" type="checkbox" id="parking" name="parking">

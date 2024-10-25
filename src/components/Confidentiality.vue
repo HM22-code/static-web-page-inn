@@ -3,9 +3,9 @@
 
 <template>
     <div class="container">
-		<div class="m-4">
+		<div class="m-4 p-4">
 			<div>
-				<h2>Utilisation des données personnelles collectées</h2>
+				<h1>Utilisation des données personnelles collectées</h1>
 				<p>
 					De manière générale, vous n’êtes pas tenu de nous
 					communiquer vos données personnelles lorsque vous visitez notre site Internet. Nous ne collectons pas de données
@@ -46,7 +46,7 @@
 				</p>
 			</div>
 			<div>
-				<h2>Utilisation et transmission de vos données personnelles</h2>
+				<h1>Utilisation et transmission de vos données personnelles</h1>
 				<div>
 					<h3>Durées de stockage de vos données</h3>
 					<p>
