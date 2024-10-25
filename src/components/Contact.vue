@@ -1,22 +1,11 @@
 <script setup>
+import Location from './Location.vue';
+
 </script>
 
 <template>
-    <div class="container">
-        <article>
-			<h2>Auberge de Peillon</h2>
-			<div id="auberge">
-				<h3>Coordonnées</h3>
-				<p>Place Auguste Arnulf, 06440 Peillon village</p>
-				<p><a href="tel:0412131415">Téléphone : 04 12 13 14 15</a></p>
-				<p><a href="mailto:contact@aubergedepeillon.fr">Courriel : contact@aubergedepeillon.fr</a></p>
-				<h3>Dates d'ouverture</h3>
-				<p>L'auberge de Peillon vous accueille tous les jours du 01 mai au 31 octobre.</p>
-				<p>Elle est fermée de 02 janvier au 31 janvier pour congés annuels.</p>
-				<p>Le reste de l'année, nous sommes fermés du lundi au mercredi</p>
-			</div>
-		</article>
-		<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=7.376697063446046%2C43.770288083499%2C7.384378910064698%2C43.78429391772475&amp;layer=mapnik&amp;marker=43.77729141068732%2C7.380537986755371" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=43.7773&amp;mlon=7.3805#map=16/43.7773/7.3805">Afficher une carte plus grande</a></small>
+    <div>
+		<Location />
 		<div class="card">
 			<img src="../assets/img/peillon.jpg" class="card-img-top" alt="peillon">
 			<div class="card-body">
