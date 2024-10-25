@@ -12,7 +12,7 @@
             <p>Elle est fermée de 02 janvier au 31 janvier pour congés annuels.</p>
             <p>Le reste de l'année, nous sommes fermés du lundi au mercredi</p>
             <h3>Adresse</h3>
-            <p><small>Auguste Arnulf, 06440 Peillon village</small></p>
+            <p><address>Auguste Arnulf, 06440 Peillon village</address></p>
             <p><small><a href="https://www.openstreetmap.org/?mlat=43.77862&amp;mlon=7.38206#map=16/43.77862/7.38206">Afficher la carte sur OpenStreetMap</a></small></p>
         </div>
         <div class="map">
