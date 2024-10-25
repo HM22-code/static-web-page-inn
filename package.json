@@ -12,7 +12,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "sass": "^1.77.6",
     "vue": "^3.4.37",
